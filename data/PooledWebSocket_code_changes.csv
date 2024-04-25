@@ -1,0 +1,4 @@
+file_name,line_before,line_after,reference,project,commit_link
+server.js,,"path = require('path'),",7b3b4e5c6be6d8a964296fa3c50e38dc07e9701d,PooledWebSocket,https://github.com/Eeems/PooledWebSocket/commit/7b3b4e5c6be6d8a964296fa3c50e38dc07e9701d
+server.js,"var rs = fs.createReadStream(__dirname+req.url,{","var rs = fs.createReadStream(__dirname+path.normalize(req.url).replace(/^(\.\.[\/\\])+/, ''),{",7b3b4e5c6be6d8a964296fa3c50e38dc07e9701d,PooledWebSocket,https://github.com/Eeems/PooledWebSocket/commit/7b3b4e5c6be6d8a964296fa3c50e38dc07e9701d
+server.js,});,});,7b3b4e5c6be6d8a964296fa3c50e38dc07e9701d,PooledWebSocket,https://github.com/Eeems/PooledWebSocket/commit/7b3b4e5c6be6d8a964296fa3c50e38dc07e9701d

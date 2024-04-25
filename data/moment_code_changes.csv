@@ -1,0 +1,3 @@
+file_name,line_before,line_after,reference,project,commit_link
+src/lib/units/month.js,var MONTHS_IN_FORMAT = /D[oD]?(\[[^\[\]]*\]|\s+)+MMMM?/;,var MONTHS_IN_FORMAT = /D[oD]?(\[[^\[\]]*\]|\s)+MMMM?/;,663f33e333212b3800b63592cd8e237ac8fabdb9,moment,https://github.com/moment/moment/commit/663f33e333212b3800b63592cd8e237ac8fabdb9
+src/locale/lt.js,isFormat: /D[oD]?(\[[^\[\]]*\]|\s+)+MMMM?|MMMM?(\[[^\[\]]*\]|\s+)+D[oD]?/,isFormat: /D[oD]?(\[[^\[\]]*\]|\s)+MMMM?|MMMM?(\[[^\[\]]*\]|\s)+D[oD]?/,663f33e333212b3800b63592cd8e237ac8fabdb9,moment,https://github.com/moment/moment/commit/663f33e333212b3800b63592cd8e237ac8fabdb9

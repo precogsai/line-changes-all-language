@@ -1,0 +1,2 @@
+file_name,line_before,line_after,reference,project,commit_link
+src/constants.js,"installerUrl: 'http://download.microsoft.com/download/5/f/7/5f7acaeb-8363-451f-9425-68a90f98b238/visualcppbuildtools_full.exe',","installerUrl: 'https://download.microsoft.com/download/5/f/7/5f7acaeb-8363-451f-9425-68a90f98b238/visualcppbuildtools_full.exe',",9835d33e68f2cb5e4d148e954bb3ed0221d98e90,windows-build-tools,https://github.com/felixrieseberg/windows-build-tools/commit/9835d33e68f2cb5e4d148e954bb3ed0221d98e90

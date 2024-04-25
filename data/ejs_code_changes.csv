@@ -1,0 +1,30 @@
+file_name,line_before,line_after,reference,project,commit_link
+lib/ejs.js,,var _OPTS_IN_DATA_BLACKLIST = {,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+lib/ejs.js,,"cache: true,",49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+lib/ejs.js,,"filename: true,",49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+lib/ejs.js,,"root: true,",49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+lib/ejs.js,,localsName: true,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+lib/ejs.js,,};,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+lib/ejs.js,// Disallow setting the root opt for includes via a passed data obj,,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+lib/ejs.js,"// Unsanitized, parameterized use of `render` could allow the",,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+lib/ejs.js,"// include directory to be reset, opening up the possibility of",,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+lib/ejs.js,// remote code execution,,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+lib/ejs.js,if (p == 'root') {,// Disallow passing potentially dangerous opts in the data,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+lib/ejs.js,,// These opts should not be settable via a `render` call,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+lib/ejs.js,,if (_OPTS_IN_DATA_BLACKLIST[p]) {,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+test/ejs.js,,/* Old API -- remove when this shim goes away */,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+test/ejs.js,,"suite('ejs.render(str, dataAndOpts)', function () {",49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+test/ejs.js,,"test('render the template with data/opts passed together', function () {",49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+test/ejs.js,,"assert.equal(ejs.render('<p><?= foo ?></p>', {foo: 'yay', delimiter: '?'}),",49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+test/ejs.js,,'<p>yay</p>');,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+test/ejs.js,,});,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+test/ejs.js,,"test('disallow unsafe opts passed along in data', function () {",49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+test/ejs.js,,"assert.equal(ejs.render('<p><?= locals.foo ?></p>',",49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+test/ejs.js,,// localsName should not get reset because it's blacklisted,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+test/ejs.js,,"{_with: false, foo: 'yay', delimiter: '?', localsName: '_'}),",49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+test/ejs.js,,'<p>yay</p>');,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+test/ejs.js,,});,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+test/ejs.js,,});,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+test/ejs.js,,,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+test/ejs.js,,,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+test/ejs.js,"assert.equal(ejs.render(template, options),","assert.equal(ejs.render(template, {}, options),",49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f

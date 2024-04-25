@@ -1,0 +1,110 @@
+file_name,line_before,line_after,reference,project,commit_link
+lib/ejs.js,,var _OPTS_IN_DATA_BLACKLIST = {,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+lib/ejs.js,,"cache: true,",49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+lib/ejs.js,,"filename: true,",49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+lib/ejs.js,,"root: true,",49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+lib/ejs.js,,localsName: true,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+lib/ejs.js,,};,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+lib/ejs.js,// Disallow setting the root opt for includes via a passed data obj,,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+lib/ejs.js,"// Unsanitized, parameterized use of `render` could allow the",,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+lib/ejs.js,"// include directory to be reset, opening up the possibility of",,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+lib/ejs.js,// remote code execution,,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+lib/ejs.js,if (p == 'root') {,// Disallow passing potentially dangerous opts in the data,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+lib/ejs.js,,// These opts should not be settable via a `render` call,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+lib/ejs.js,,if (_OPTS_IN_DATA_BLACKLIST[p]) {,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+test/ejs.js,,/* Old API -- remove when this shim goes away */,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+test/ejs.js,,"suite('ejs.render(str, dataAndOpts)', function () {",49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+test/ejs.js,,"test('render the template with data/opts passed together', function () {",49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+test/ejs.js,,"assert.equal(ejs.render('<p><?= foo ?></p>', {foo: 'yay', delimiter: '?'}),",49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+test/ejs.js,,'<p>yay</p>');,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+test/ejs.js,,});,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+test/ejs.js,,"test('disallow unsafe opts passed along in data', function () {",49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+test/ejs.js,,"assert.equal(ejs.render('<p><?= locals.foo ?></p>',",49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+test/ejs.js,,// localsName should not get reset because it's blacklisted,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+test/ejs.js,,"{_with: false, foo: 'yay', delimiter: '?', localsName: '_'}),",49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+test/ejs.js,,'<p>yay</p>');,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+test/ejs.js,,});,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+test/ejs.js,,});,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+test/ejs.js,,,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+test/ejs.js,,,49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+test/ejs.js,"assert.equal(ejs.render(template, options),","assert.equal(ejs.render(template, {}, options),",49264e0037e313a0a3e033450b5c184112516d8f,ejs,https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f
+lib/routes/statics.js,var filePath = process.cwd()+(resource.pathname || '/');,var resourcePathname = resource.pathname || '/';,789a00047459fd80b6f0a9701a1378a47fb73ba8,hostr,
+lib/routes/statics.js,,"resourcePathname = resourcePathname.replace(/\/\.\./, """").replace(/\.\.\//, """");",789a00047459fd80b6f0a9701a1378a47fb73ba8,hostr,
+lib/routes/statics.js,,var filePath = process.cwd()+resourcePathname;,789a00047459fd80b6f0a9701a1378a47fb73ba8,hostr,
+package.json,"""version"": ""2.3.5"",","""version"": ""2.3.6"",",789a00047459fd80b6f0a9701a1378a47fb73ba8,hostr,
+internal/api/v1/user/user.go,,users[i].Authenticate = v1User.Authenticate{},0faa8c2018a265eac9d1d8021afbeeba06d92024,KubePi,https://github.com/1Panel-dev/KubePi/commit/0faa8c2018a265eac9d1d8021afbeeba06d92024
+internal/api/v1/user/user.go,,req.Authenticate = v1User.Authenticate{},0faa8c2018a265eac9d1d8021afbeeba06d92024,KubePi,https://github.com/1Panel-dev/KubePi/commit/0faa8c2018a265eac9d1d8021afbeeba06d92024
+internal/api/v1/user/user.go,,u.Authenticate = v1User.Authenticate{},0faa8c2018a265eac9d1d8021afbeeba06d92024,KubePi,https://github.com/1Panel-dev/KubePi/commit/0faa8c2018a265eac9d1d8021afbeeba06d92024
+internal/service/v1/user/user.go,us.Authenticate.Password = cu.Authenticate.Password,,0faa8c2018a265eac9d1d8021afbeeba06d92024,KubePi,https://github.com/1Panel-dev/KubePi/commit/0faa8c2018a265eac9d1d8021afbeeba06d92024
+internal/service/v1/user/user.go,us.Authenticate.Token = cu.Authenticate.Token,,0faa8c2018a265eac9d1d8021afbeeba06d92024,KubePi,https://github.com/1Panel-dev/KubePi/commit/0faa8c2018a265eac9d1d8021afbeeba06d92024
+lodash.js,,/**,d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+lodash.js,,"* Gets the value at `key`, unless `key` is ""__proto__"".",d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+lodash.js,,*,d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+lodash.js,,* @private,d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+lodash.js,,* @param {Object} object The object to query.,d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+lodash.js,,* @param {string} key The key of the property to get.,d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+lodash.js,,* @returns {*} Returns the property value.,d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+lodash.js,,*/,d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+lodash.js,,"function safeGet(object, key) {",d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+lodash.js,,return key == '__proto__',d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+lodash.js,,? undefined,d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+lodash.js,,: object[key];,d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+lodash.js,,},d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+lodash.js,,,d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+lodash.js,"? customizer(object[key], srcValue, (key + ''), object, source, stack)","? customizer(safeGet(object, key), srcValue, (key + ''), object, source, stack)",d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+lodash.js,"var objValue = object[key],",,d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+lodash.js,"srcValue = source[key],","var objValue = safeGet(object, key),",d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+lodash.js,,"srcValue = safeGet(source, key),",d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+test/test.js,,"QUnit.test('should not merge ""__proto__"" properties', function(assert) {",d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+test/test.js,,assert.expect(1);,d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+test/test.js,,if (JSON) {,d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+test/test.js,,"_.merge({}, JSON.parse('{""__proto__"":{""a"":1}}'));",d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+test/test.js,,"var actual = ""a"" in objectProto;",d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+test/test.js,,delete objectProto.a;,d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+test/test.js,,assert.notOk(actual);,d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+test/test.js,,} else {,d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+test/test.js,,skipAssert(assert);,d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+test/test.js,,},d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+test/test.js,,});,d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+.travis.yml,- '5',,8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9,mixin-deep,https://github.com/jonschlinkert/mixin-deep/commit/8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9
+.travis.yml,- '4',## Heads up!,8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9,mixin-deep,https://github.com/jonschlinkert/mixin-deep/commit/8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9
+.verb.md,,"[Please update][update] to version 2.0.1 or later, a critical bug was fixed in that version.",8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9,mixin-deep,https://github.com/jonschlinkert/mixin-deep/commit/8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9
+.verb.md,,[update]: https://gist.github.com/jonschlinkert/9a62534c4f8bc76aee6058caa3f05fd6,8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9,mixin-deep,https://github.com/jonschlinkert/mixin-deep/commit/8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9
+README.md,# mixin-deep [![NPM version](https://img.shields.io/npm/v/mixin-deep.svg?style=flat)](https://www.npmjs.com/package/mixin-deep) [![NPM monthly downloads](https://img.shields.io/npm/dm/mixin-deep.svg?style=flat)](https://npmjs.org/package/mixin-deep) [![NPM total downloads](https://img.shields.io/npm/dt/mixin-deep.svg?style=flat)](https://npmjs.org/package/mixin-deep) [![Linux Build Status](https://img.shields.io/travis/jonschlinkert/mixin-deep.svg?style=flat&label=Travis)](https://travis-ci.org/jonschlinkert/mixin-deep),# mixin-deep [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W8YFZ425KND68) [![NPM version](https://img.shields.io/npm/v/mixin-deep.svg?style=flat)](https://www.npmjs.com/package/mixin-deep) [![NPM monthly downloads](https://img.shields.io/npm/dm/mixin-deep.svg?style=flat)](https://npmjs.org/package/mixin-deep) [![NPM total downloads](https://img.shields.io/npm/dt/mixin-deep.svg?style=flat)](https://npmjs.org/package/mixin-deep) [![Linux Build Status](https://img.shields.io/travis/jonschlinkert/mixin-deep.svg?style=flat&label=Travis)](https://travis-ci.org/jonschlinkert/mixin-deep),8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9,mixin-deep,https://github.com/jonschlinkert/mixin-deep/commit/8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9
+README.md,,## Heads up!,8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9,mixin-deep,https://github.com/jonschlinkert/mixin-deep/commit/8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9
+README.md,,"[Please update](https://gist.github.com/jonschlinkert/9a62534c4f8bc76aee6058caa3f05fd6) to version 2.0.1 or later, a critical bug was fixed in that version.",8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9,mixin-deep,https://github.com/jonschlinkert/mixin-deep/commit/8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9
+README.md,,,8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9,mixin-deep,https://github.com/jonschlinkert/mixin-deep/commit/8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9
+README.md,| **Commits** | **Contributor** |,,8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9,mixin-deep,https://github.com/jonschlinkert/mixin-deep/commit/8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9
+README.md,| --- | --- |,,8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9,mixin-deep,https://github.com/jonschlinkert/mixin-deep/commit/8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9
+README.md,| 26 | [jonschlinkert](https://github.com/jonschlinkert) |,,8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9,mixin-deep,https://github.com/jonschlinkert/mixin-deep/commit/8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9
+README.md,| 2 | [doowb](https://github.com/doowb) |,| **Commits** | **Contributor** |,8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9,mixin-deep,https://github.com/jonschlinkert/mixin-deep/commit/8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9
+README.md,,| --- | --- |,8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9,mixin-deep,https://github.com/jonschlinkert/mixin-deep/commit/8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9
+README.md,,| 28 | [jonschlinkert](https://github.com/jonschlinkert) |,8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9,mixin-deep,https://github.com/jonschlinkert/mixin-deep/commit/8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9
+README.md,,| 2  | [doowb](https://github.com/doowb) |,8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9,mixin-deep,https://github.com/jonschlinkert/mixin-deep/commit/8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9
+README.md,* [LinkedIn Profile](https://linkedin.com/in/jonschlinkert),* [LinkedIn Profile](https://linkedin.com/in/jonschlinkert),8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9,mixin-deep,https://github.com/jonschlinkert/mixin-deep/commit/8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9
+README.md,"Copyright © 2018, [Jon Schlinkert](https://github.com/jonschlinkert).","Copyright © 2019, [Jon Schlinkert](https://github.com/jonschlinkert).",8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9,mixin-deep,https://github.com/jonschlinkert/mixin-deep/commit/8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9
+README.md,"_This file was generated by [verb-generate-readme](https://github.com/verbose/verb-generate-readme), v0.6.0, on July 11, 2018._","_This file was generated by [verb-generate-readme](https://github.com/verbose/verb-generate-readme), v0.8.0, on June 19, 2019._",8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9,mixin-deep,https://github.com/jonschlinkert/mixin-deep/commit/8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9
+index.js,"function mixinDeep(target, ...rest) {",const isObject = val => {,8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9,mixin-deep,https://github.com/jonschlinkert/mixin-deep/commit/8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9
+index.js,,return typeof val === 'function' || (typeof val === 'object' && val !== null && !Array.isArray(val));,8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9,mixin-deep,https://github.com/jonschlinkert/mixin-deep/commit/8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9
+index.js,,};,8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9,mixin-deep,https://github.com/jonschlinkert/mixin-deep/commit/8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9
+index.js,,const isValidKey = key => {,8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9,mixin-deep,https://github.com/jonschlinkert/mixin-deep/commit/8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9
+index.js,,return key !== '__proto__' && key !== 'constructor' && key !== 'prototype';,8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9,mixin-deep,https://github.com/jonschlinkert/mixin-deep/commit/8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9
+index.js,,};,8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9,mixin-deep,https://github.com/jonschlinkert/mixin-deep/commit/8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9
+index.js,,"const mixinDeep = (target, ...rest) => {",8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9,mixin-deep,https://github.com/jonschlinkert/mixin-deep/commit/8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9
+index.js,if (key !== '__proto__') {,if (isValidKey(key)) {,8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9,mixin-deep,https://github.com/jonschlinkert/mixin-deep/commit/8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9
+index.js,},};,8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9,mixin-deep,https://github.com/jonschlinkert/mixin-deep/commit/8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9
+index.js,function isObject(val) {,,8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9,mixin-deep,https://github.com/jonschlinkert/mixin-deep/commit/8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9
+index.js,return typeof val === 'function' || (typeof val === 'object' && val !== null && !Array.isArray(val));,,8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9,mixin-deep,https://github.com/jonschlinkert/mixin-deep/commit/8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9
+index.js,},,8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9,mixin-deep,https://github.com/jonschlinkert/mixin-deep/commit/8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9
+index.js,,,8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9,mixin-deep,https://github.com/jonschlinkert/mixin-deep/commit/8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9
+package.json,"""node"": "">=4""","""node"": "">=6""",8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9,mixin-deep,https://github.com/jonschlinkert/mixin-deep/commit/8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9
+package.json,"""gulp-format-md"": ""^1.0.0"",",,8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9,mixin-deep,https://github.com/jonschlinkert/mixin-deep/commit/8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9
+package.json,"""mocha"": ""^5.2.0""","""gulp-format-md"": ""^2.0.0"",",8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9,mixin-deep,https://github.com/jonschlinkert/mixin-deep/commit/8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9
+package.json,,"""mocha"": ""^6.1.4""",8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9,mixin-deep,https://github.com/jonschlinkert/mixin-deep/commit/8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9
+package.json,,"""assign"",",8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9,mixin-deep,https://github.com/jonschlinkert/mixin-deep/commit/8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9
+src/lib/units/month.js,var MONTHS_IN_FORMAT = /D[oD]?(\[[^\[\]]*\]|\s+)+MMMM?/;,var MONTHS_IN_FORMAT = /D[oD]?(\[[^\[\]]*\]|\s)+MMMM?/;,663f33e333212b3800b63592cd8e237ac8fabdb9,moment,https://github.com/moment/moment/commit/663f33e333212b3800b63592cd8e237ac8fabdb9
+src/locale/lt.js,isFormat: /D[oD]?(\[[^\[\]]*\]|\s+)+MMMM?|MMMM?(\[[^\[\]]*\]|\s+)+D[oD]?/,isFormat: /D[oD]?(\[[^\[\]]*\]|\s)+MMMM?|MMMM?(\[[^\[\]]*\]|\s)+D[oD]?/,663f33e333212b3800b63592cd8e237ac8fabdb9,moment,https://github.com/moment/moment/commit/663f33e333212b3800b63592cd8e237ac8fabdb9
+server.js,,"path = require('path'),",7b3b4e5c6be6d8a964296fa3c50e38dc07e9701d,PooledWebSocket,https://github.com/Eeems/PooledWebSocket/commit/7b3b4e5c6be6d8a964296fa3c50e38dc07e9701d
+server.js,"var rs = fs.createReadStream(__dirname+req.url,{","var rs = fs.createReadStream(__dirname+path.normalize(req.url).replace(/^(\.\.[\/\\])+/, ''),{",7b3b4e5c6be6d8a964296fa3c50e38dc07e9701d,PooledWebSocket,https://github.com/Eeems/PooledWebSocket/commit/7b3b4e5c6be6d8a964296fa3c50e38dc07e9701d
+server.js,});,});,7b3b4e5c6be6d8a964296fa3c50e38dc07e9701d,PooledWebSocket,https://github.com/Eeems/PooledWebSocket/commit/7b3b4e5c6be6d8a964296fa3c50e38dc07e9701d
+src/constants.js,"installerUrl: 'http://download.microsoft.com/download/5/f/7/5f7acaeb-8363-451f-9425-68a90f98b238/visualcppbuildtools_full.exe',","installerUrl: 'https://download.microsoft.com/download/5/f/7/5f7acaeb-8363-451f-9425-68a90f98b238/visualcppbuildtools_full.exe',",9835d33e68f2cb5e4d148e954bb3ed0221d98e90,windows-build-tools,https://github.com/felixrieseberg/windows-build-tools/commit/9835d33e68f2cb5e4d148e954bb3ed0221d98e90

@@ -1,0 +1,6 @@
+file_name,line_before,line_after,reference,project,commit_link
+internal/api/v1/user/user.go,,users[i].Authenticate = v1User.Authenticate{},0faa8c2018a265eac9d1d8021afbeeba06d92024,KubePi,https://github.com/1Panel-dev/KubePi/commit/0faa8c2018a265eac9d1d8021afbeeba06d92024
+internal/api/v1/user/user.go,,req.Authenticate = v1User.Authenticate{},0faa8c2018a265eac9d1d8021afbeeba06d92024,KubePi,https://github.com/1Panel-dev/KubePi/commit/0faa8c2018a265eac9d1d8021afbeeba06d92024
+internal/api/v1/user/user.go,,u.Authenticate = v1User.Authenticate{},0faa8c2018a265eac9d1d8021afbeeba06d92024,KubePi,https://github.com/1Panel-dev/KubePi/commit/0faa8c2018a265eac9d1d8021afbeeba06d92024
+internal/service/v1/user/user.go,us.Authenticate.Password = cu.Authenticate.Password,,0faa8c2018a265eac9d1d8021afbeeba06d92024,KubePi,https://github.com/1Panel-dev/KubePi/commit/0faa8c2018a265eac9d1d8021afbeeba06d92024
+internal/service/v1/user/user.go,us.Authenticate.Token = cu.Authenticate.Token,,0faa8c2018a265eac9d1d8021afbeeba06d92024,KubePi,https://github.com/1Panel-dev/KubePi/commit/0faa8c2018a265eac9d1d8021afbeeba06d92024

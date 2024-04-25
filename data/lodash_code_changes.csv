@@ -1,0 +1,30 @@
+file_name,line_before,line_after,reference,project,commit_link
+lodash.js,,/**,d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+lodash.js,,"* Gets the value at `key`, unless `key` is ""__proto__"".",d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+lodash.js,,*,d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+lodash.js,,* @private,d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+lodash.js,,* @param {Object} object The object to query.,d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+lodash.js,,* @param {string} key The key of the property to get.,d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+lodash.js,,* @returns {*} Returns the property value.,d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+lodash.js,,*/,d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+lodash.js,,"function safeGet(object, key) {",d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+lodash.js,,return key == '__proto__',d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+lodash.js,,? undefined,d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+lodash.js,,: object[key];,d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+lodash.js,,},d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+lodash.js,,,d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+lodash.js,"? customizer(object[key], srcValue, (key + ''), object, source, stack)","? customizer(safeGet(object, key), srcValue, (key + ''), object, source, stack)",d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+lodash.js,"var objValue = object[key],",,d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+lodash.js,"srcValue = source[key],","var objValue = safeGet(object, key),",d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+lodash.js,,"srcValue = safeGet(source, key),",d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+test/test.js,,"QUnit.test('should not merge ""__proto__"" properties', function(assert) {",d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+test/test.js,,assert.expect(1);,d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+test/test.js,,if (JSON) {,d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+test/test.js,,"_.merge({}, JSON.parse('{""__proto__"":{""a"":1}}'));",d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+test/test.js,,"var actual = ""a"" in objectProto;",d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+test/test.js,,delete objectProto.a;,d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+test/test.js,,assert.notOk(actual);,d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+test/test.js,,} else {,d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+test/test.js,,skipAssert(assert);,d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+test/test.js,,},d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
+test/test.js,,});,d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a,lodash,https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a
