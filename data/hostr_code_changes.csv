@@ -1,0 +1,5 @@
+file_name,line_before,line_after,reference,project
+lib/routes/statics.js,var filePath = process.cwd()+(resource.pathname || '/');,var resourcePathname = resource.pathname || '/';,789a00047459fd80b6f0a9701a1378a47fb73ba8,hostr
+lib/routes/statics.js,,"resourcePathname = resourcePathname.replace(/\/\.\./, """").replace(/\.\.\//, """");",789a00047459fd80b6f0a9701a1378a47fb73ba8,hostr
+lib/routes/statics.js,,var filePath = process.cwd()+resourcePathname;,789a00047459fd80b6f0a9701a1378a47fb73ba8,hostr
+package.json,"""version"": ""2.3.5"",","""version"": ""2.3.6"",",789a00047459fd80b6f0a9701a1378a47fb73ba8,hostr

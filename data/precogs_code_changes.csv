@@ -1,0 +1,15 @@
+file_name,line_before,line_after,reference,project
+src/pages/vulnerabilities.jsx,,"// const initialPerPage = parseInt(sessionStorage.getItem('perPage'), 10) || 10;",b2ee106ead5867230f8b2f8c819013f84d7ba9e4,precogs
+src/pages/vulnerabilities.jsx,,"// const [perPage, setPerPage] = useState(initialPerPage);",b2ee106ead5867230f8b2f8c819013f84d7ba9e4,precogs
+src/pages/vulnerabilities.jsx,,,b2ee106ead5867230f8b2f8c819013f84d7ba9e4,precogs
+src/pages/vulnerabilities.jsx,// Calling API,"// sessionStorage.setItem('perPage', perPage.toString()); // Store perPage in sessionStorage",b2ee106ead5867230f8b2f8c819013f84d7ba9e4,precogs
+src/pages/vulnerabilities.jsx,const response = await axios.get(`https://vulnerablity-db-server.vercel.app/api/v1/vulnerabilities/pagination?page=1&limit=${perPage}`);,const response = await axios.get(`https://vulnerablity-db-server.vercel.app/api/v1/vulnerabilities/pagination?page=1&limit=20`);,b2ee106ead5867230f8b2f8c819013f84d7ba9e4,precogs
+src/pages/vulnerabilities.jsx,,// const response = await axios.get(`https://vulnerablity-db-server.vercel.app/api/v1/vulnerabilities/pagination?page=1&limit=${perPage}`);,b2ee106ead5867230f8b2f8c819013f84d7ba9e4,precogs
+src/pages/vulnerabilities.jsx,"}, []);","}, []); // Add perPage to the dependency array",b2ee106ead5867230f8b2f8c819013f84d7ba9e4,precogs
+src/pages/vulnerabilities.jsx,,"// }, [perPage]); // Add perPage to the dependency array",b2ee106ead5867230f8b2f8c819013f84d7ba9e4,precogs
+src/pages/vulnerabilities.jsx,// Retrieve the 'perPage' value from sessionStorage on component mount,,b2ee106ead5867230f8b2f8c819013f84d7ba9e4,precogs
+src/pages/vulnerabilities.jsx,"const initialPerPage = parseInt(sessionStorage.getItem('perPage'), 10) || 10;",,b2ee106ead5867230f8b2f8c819013f84d7ba9e4,precogs
+src/pages/vulnerabilities.jsx,"const [perPage, setPerPage] = useState(initialPerPage);",,b2ee106ead5867230f8b2f8c819013f84d7ba9e4,precogs
+src/pages/vulnerabilities.jsx,"console.log(""sad"", perPage)",,b2ee106ead5867230f8b2f8c819013f84d7ba9e4,precogs
+src/pages/vulnerabilities.jsx,,,b2ee106ead5867230f8b2f8c819013f84d7ba9e4,precogs
+src/pages/vulnerabilities.jsx,,,b2ee106ead5867230f8b2f8c819013f84d7ba9e4,precogs
